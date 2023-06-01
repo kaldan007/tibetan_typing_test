@@ -43,7 +43,7 @@ function updateTimer() {
 
 //Sets timer
 const timeReduce = () => {
-  time = 360;
+  time = 60;
   timer = setInterval(updateTimer, 1000);
 };
 
