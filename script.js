@@ -43,7 +43,7 @@ function updateTimer() {
 
 //Sets timer
 const timeReduce = () => {
-  time = 60;
+  time = 360;
   timer = setInterval(updateTimer, 1000);
 };
 
@@ -98,7 +98,7 @@ const displayResult = () => {
   userInput.disabled = true;
   let timeTaken = 1;
   if (time != 0) {
-    timeTaken = (60 - time) / 100;
+    timeTaken = (360 - time) / 100;
   }
   document.getElementById("wpm").innerText =
     (userInput.value.length / 5 / timeTaken).toFixed(2) + " wpm";
